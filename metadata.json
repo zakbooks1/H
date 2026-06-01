@@ -1,0 +1,6 @@
+{
+  "name": "Tristan's Pride Celebration",
+  "description": "An interactive, beautiful tribute and celebration app for Tristan for Pride Month, featuring customizable cards, an interactive canvas, and a photo gallery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

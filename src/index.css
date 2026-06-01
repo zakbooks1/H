@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", var(--font-sans);
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom CSS Scrollbar style and pulse-glow effects */
+@keyframes rainbow-text {
+  0%, 100% { color: #ff5e62; }
+  20% { color: #ff9966; }
+  40% { color: #ffee55; }
+  60% { color: #66ff66; }
+  80% { color: #66b3ff; }
+  90% { color: #b366ff; }
+}
+
+@keyframes rainbow-border {
+  0%, 100% { border-color: #ff5e62; }
+  20% { border-color: #ff9966; }
+  40% { border-color: #ffee55; }
+  60% { border-color: #66ff66; }
+  80% { border-color: #66b3ff; }
+  90% { border-color: #b366ff; }
+}
+
+@keyframes rainbow-bg-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.rainbow-bg {
+  background: linear-gradient(135deg, #fff5f5 0%, #fff9f3 20%, #fffff0 40%, #f3fff3 60%, #f0fafb 80%, #faf5ff 100%);
+}
+
+.rainbow-active-bg {
+  background: linear-gradient(-45deg, #ffeef0, #fff7ee, #ffffee, #eeffee, #e6f9ff, #f7eeff);
+  background-size: 300% 300%;
+  animation: rainbow-bg-shift 12s ease infinite;
+}
+
+.rainbow-glow {
+  box-shadow: 0 0 20px rgba(255, 94, 98, 0.15), 0 0 40px rgba(102, 179, 255, 0.15);
+}
+
+.cursor-pointer-celebrate {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='font-size:16px'><text y='16'>🎉</text></svg>"), auto;
+}
+
